@@ -5,4 +5,4 @@ def print_last_digit(number):
         last_digit = -1 * last_digit
     else:
         last_digit
-    print(str(last_digit))
+    print(str(last_digit), end="")
