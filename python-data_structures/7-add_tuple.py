@@ -7,4 +7,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
         val_b = tuple_b[i] if i < len(tuple_b) else 0
         new_list.append(val_a + val_b)
     result = tuple(new_list)
-    print(result)
+    return result
