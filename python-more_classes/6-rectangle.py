@@ -71,7 +71,7 @@ class Rectangle:
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     @classmethod
-    def __del__():
+    def __del__(cls):
         # when deleted code
         cls.number_of_instances -= 1
         print('Bye rectangle...')
