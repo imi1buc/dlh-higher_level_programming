@@ -5,8 +5,11 @@
 class Rectangle:
     """Class defined for this script"""
 
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         # Assignments of attributes
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -70,4 +73,5 @@ class Rectangle:
     @classmethod
     def __del__():
         # when deleted code
+        cls.number_of_instances -= 1
         print('Bye rectangle...')
